@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  name: string = 'Control Manager Services';
+  year: number;
+  constructor() { 
+    this.year = new Date().getFullYear();
+    
+  }
 
   ngOnInit(): void {
+    
   }
 
 }

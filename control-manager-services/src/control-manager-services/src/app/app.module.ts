@@ -8,6 +8,9 @@ import { MySecondComponentComponent } from './components/my-second-component/my-
 import { MyThirdComponentComponent } from './components/my-third-component/my-third-component.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ParentDataComponent } from './components/parent-data/parent-data.component';
+import { EmitterComponent } from './components/emitter/emitter.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HeaderComponent } from './components/header/header.component';
     MySecondComponentComponent,
     MyThirdComponentComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ParentDataComponent,
+    EmitterComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

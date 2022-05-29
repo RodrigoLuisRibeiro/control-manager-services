@@ -1,15 +1,21 @@
-
-
-
-
-
   <!-- Components -->
+  <!--
   <app-header></app-header>
   <app-my-first-component></app-my-first-component>
   <h2>Components</h2>
   <app-my-second-component></app-my-second-component>
   <app-my-third-component></app-my-third-component>
-  <app-footer></app-footer>
-
-
+  <app-footer></app-footer> -->
+<app-header></app-header>
+<nav>
+  <a routerLink="/">Home</a>
+  <br><br/>
+  <a routerLink="/my-second-component">FirstPage</a>
+  <br><br/>
+  <a routerLink="/my-third-component">SecondPage</a>
+</nav>
+<router-outlet></router-outlet>
+<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
+<app-emitter></app-emitter>
+<app-footer></app-footer>
 

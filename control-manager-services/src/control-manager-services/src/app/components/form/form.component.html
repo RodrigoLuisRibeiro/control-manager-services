@@ -1,0 +1,41 @@
+<form (ngSubmit)="submit()" [formGroup]="perfil" #formDir="ngForm">
+        <label for="nome">Nome:</label>
+        <br/>
+        <input formControlName="nome" 
+        placeholder="Insira seu nome completo" 
+        required #nome
+        type="text" id="nome"
+        pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)+"
+        >
+        <div *ngIf="perfil.value.nome.valid && perfil.value.nome.touched"
+        class="alert alert-danger" role="alert">O nome completo é obrigatório.</div>
+        <!--<div>{{nome.className}}</div>-->
+        <br/>
+       
+            
+   <!-- <div *ngIf="nome.invalid? && formDir.submitted" class="validation-error">
+        <p *ngIf="nome.errors?.['required']">O nome é obrigatório.</p>
+    </div> -->
+    <br/>
+    <label>Email:</label>
+    <br/>
+    <input formControlName="email" placeholder="Insira seu email" required type="text"/>
+    <br/>
+    <label>Senha:</label>
+    <br/>
+    <input 
+    formControlName="senha" 
+    placeholder="Insira sua senha" 
+    required 
+    type="password"
+    pattern=".{6,}"
+    />
+    <br/>
+    <br/>
+    <button (click)="obter()">Enviar</button>
+    <br/>
+</form>
+<br/> 
+<pre>
+    {{ data | json}}
+</pre>

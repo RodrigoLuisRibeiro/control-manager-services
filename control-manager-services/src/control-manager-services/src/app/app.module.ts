@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyFirstComponentComponent } from './components/my-first-component/my-first-component.component';
 import { MySecondComponentComponent } from './components/my-second-component/my-second-component.component';
 import { MyThirdComponentComponent } from './components/my-third-component/my-third-component.component';
@@ -11,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChildComponent } from './components/child/child.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,14 @@ import { ChildComponent } from './components/child/child.component';
     HeaderComponent,
     ParentDataComponent,
     EmitterComponent,
-    ChildComponent
+    ChildComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, 
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

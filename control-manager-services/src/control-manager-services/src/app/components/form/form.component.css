@@ -1,0 +1,27 @@
+form {
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+}
+
+button{
+    background-color: rgb(68, 164, 185);
+    border: 2px solid transparent;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.4s;
+}
+ button:hover{
+     color: #DEC129;
+     border-color: #DEC129;
+     background-color: transparent;
+ }
+
+ .ng-invalid.ng-touched:not(form) {
+     border: 1px solid red;
+ }
+ .ng-valid.ng-touched:not(form){
+     border: 1px solid rgb(4, 227, 4);
+ }

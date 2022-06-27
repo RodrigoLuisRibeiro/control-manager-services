@@ -1,3 +1,4 @@
+import { FormComponent } from './components/form/form.component';
 import { MyThirdComponentComponent } from './components/my-third-component/my-third-component.component';
 import { MyFirstComponentComponent } from './components/my-first-component/my-first-component.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -9,7 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {path: '', component: MyFirstComponentComponent},
   {path: 'my-second-component', component: MySecondComponentComponent},
-  {path: 'my-third-component', component: MyThirdComponentComponent}
+  {path: 'my-third-component', component: MyThirdComponentComponent},
+  {path: 'form', component: FormComponent}
 ];
 
 @NgModule({

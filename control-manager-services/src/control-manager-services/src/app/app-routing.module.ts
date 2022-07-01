@@ -1,3 +1,4 @@
+import { ServicosComponent } from './components/servicos/servicos.component';
 import { FormComponent } from './components/form/form.component';
 import { MyThirdComponentComponent } from './components/my-third-component/my-third-component.component';
 import { MyFirstComponentComponent } from './components/my-first-component/my-first-component.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: '', component: MyFirstComponentComponent},
   {path: 'my-second-component', component: MySecondComponentComponent},
   {path: 'my-third-component', component: MyThirdComponentComponent},
-  {path: 'form', component: FormComponent}
+  {path: 'form', component: FormComponent},
+  {path: 'app-servicos', component: ServicosComponent}
 ];
 
 @NgModule({

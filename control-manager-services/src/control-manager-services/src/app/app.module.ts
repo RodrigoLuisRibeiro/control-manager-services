@@ -13,6 +13,8 @@ import { ParentDataComponent } from './components/parent-data/parent-data.compon
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChildComponent } from './components/child/child.component';
 import { FormComponent } from './components/form/form.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,17 @@ import { FormComponent } from './components/form/form.component';
     EmitterComponent,
     ChildComponent,
     FormComponent,
+    ServicosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    ReactiveFormsModule 
+    ReactiveFormsModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

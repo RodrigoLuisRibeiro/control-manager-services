@@ -20,4 +20,8 @@ export class ServicosService {
       // delay(2000),
       tap(console.log));
   }
+
+  getTiposServicos(){
+    return ['Emergenciais','Comerciais','Hora Extra'];
+  }
 }

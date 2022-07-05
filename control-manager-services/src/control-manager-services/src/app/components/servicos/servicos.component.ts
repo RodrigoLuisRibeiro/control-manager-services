@@ -17,8 +17,11 @@ export class ServicosComponent implements OnInit {
   // @ViewChild('deleteModal', { static: true }) deleteModal;
 
   servicos$!: Observable<Servico[]>;
+  tipos!: string[];
 
-  constructor(private service: ServicosService) { }
+  constructor(private service: ServicosService) {
+    this.tipos = this.service.getTiposServicos();
+   }
 
   ngOnInit() {
     

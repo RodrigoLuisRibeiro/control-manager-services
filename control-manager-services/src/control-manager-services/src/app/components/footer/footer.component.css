@@ -1,5 +1,13 @@
-html, body {
-    height: 100%;
-    font-family: "Ubuntu", sans-serif;
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.footer2 {
+    text-align: center;
 }
 

@@ -15,6 +15,8 @@ import { ChildComponent } from './components/child/child.component';
 import { FormComponent } from './components/form/form.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule, 
     ReactiveFormsModule, 
-    HttpClientModule
+    HttpClientModule, BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

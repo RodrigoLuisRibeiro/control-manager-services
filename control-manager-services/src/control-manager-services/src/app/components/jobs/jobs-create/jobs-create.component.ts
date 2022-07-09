@@ -12,7 +12,8 @@ export class JobsCreateComponent implements OnInit {
 
   job: Job = {
     name: '',
-    tipo: ''
+    tipo: '',
+    preco: 0
   }
 
   constructor(private jobService: JobsService, 

@@ -2,45 +2,63 @@
   "servicos": [
     {
       "id": 1,
-      "nome": "Emergência"
+      "name": "Work",
+      "tipo": "Comercial",
+      "preco": 99
     },
     {
       "id": 2,
-      "nome": "Comercial"
+      "name": "Hard",
+      "tipo": "Comercial",
+      "preco": 99
     },
     {
+      "name": "Premissa",
+      "tipo": "Hora extra 0",
       "id": 3,
-      "nome": "Hora extra"
+      "preco": 99
     },
     {
       "name": "Rede",
       "tipo": "Emergência",
-      "id": 8
+      "id": 8,
+      "preco": 99
     },
     {
       "name": "Rodrigo",
       "tipo": "Emergência Final de semana",
-      "id": 9
+      "id": 9,
+      "preco": 99
     },
     {
       "name": "Thiago",
       "tipo": "Comercial",
-      "id": 10
+      "id": 10,
+      "preco": 99
     },
     {
       "name": "Lilian",
       "tipo": "Extras",
-      "id": 11
+      "id": 11,
+      "preco": 99
     },
     {
       "name": "TomTim",
-      "tipo": "Dimterim",
-      "id": 12
+      "tipo": "DimterimBebim",
+      "id": 12,
+      "preco": 99
     },
     {
       "name": "Viagem",
       "tipo": "Emergência",
-      "id": 13
+      "id": 13,
+      "preco": 99
+    },
+    {
+      "name": "Rodrigo",
+      "tipo": "Emergencial",
+      "preco": "550",
+      "id": 14
     }
   ]
 }

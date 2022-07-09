@@ -1,0 +1,46 @@
+{
+  "servicos": [
+    {
+      "id": 1,
+      "nome": "Emergência"
+    },
+    {
+      "id": 2,
+      "nome": "Comercial"
+    },
+    {
+      "id": 3,
+      "nome": "Hora extra"
+    },
+    {
+      "name": "Rede",
+      "tipo": "Emergência",
+      "id": 8
+    },
+    {
+      "name": "Rodrigo",
+      "tipo": "Emergência Final de semana",
+      "id": 9
+    },
+    {
+      "name": "Thiago",
+      "tipo": "Comercial",
+      "id": 10
+    },
+    {
+      "name": "Lilian",
+      "tipo": "Extras",
+      "id": 11
+    },
+    {
+      "name": "TomTim",
+      "tipo": "Dimterim",
+      "id": 12
+    },
+    {
+      "name": "Viagem",
+      "tipo": "Emergência",
+      "id": 13
+    }
+  ]
+}

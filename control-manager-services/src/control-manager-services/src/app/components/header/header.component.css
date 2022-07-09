@@ -1,0 +1,27 @@
+.header {
+   display: flex;
+   align-items: center;
+   background-color: rgb(76, 167, 216);
+}
+
+.header a{
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: #333;
+}
+
+.header .group {
+    padding-left: 15px;
+}
+
+.header .group i {
+   padding-right: 5px;
+   
+}
+
+.header .name {
+  padding-left: 25px; 
+}
+
+

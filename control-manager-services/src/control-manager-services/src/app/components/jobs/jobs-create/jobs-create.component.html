@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>Novo Serviço</mat-card-title>
+  <form>
+      <mat-form-field>                   <!-- Two way data binding -->
+        <input matInput placeholder="Nome" [(ngModel)]="job.name" name="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Tipo" [(ngModel)]="job.tipo" name="tipo">
+      </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createJobs()" color="primary">
+    Salvar
+</button>
+<button mat-raised-button (click)="cancelJobs()">
+    Cancelar
+</button>
+</mat-card>
+
+

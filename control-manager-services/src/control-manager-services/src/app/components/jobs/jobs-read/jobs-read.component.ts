@@ -10,7 +10,7 @@ import { Job } from '../jobs-create/jobs.model';
 export class JobsReadComponent implements OnInit {
 
   jobs!: Job[]
-  displayedColumns = ['id', 'name', 'tipo', 'preco']
+  displayedColumns = ['id', 'name', 'tipo', 'preco', 'action']
 
   constructor(private jobsService: JobsService) { }
 

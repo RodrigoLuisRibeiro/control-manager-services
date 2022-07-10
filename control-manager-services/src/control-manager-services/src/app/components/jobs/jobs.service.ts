@@ -28,4 +28,14 @@ export class JobsService {
   read():Observable<Job[]>{
     return this.http.get<Job[]>(this.baseUrl)
   }
+
+  readById(id: string): Observable<Job> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Job>(url)
+  }
+
+  update(job: Job): Observable<Job> {
+    const url = `${this.baseUrl}/${job.id}`
+    return this.http.put<Job>(url, job)
+  }
 }

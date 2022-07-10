@@ -10,12 +10,15 @@ import { MySecondComponentComponent } from './components/my-second-component/my-
 import { HeaderComponent } from './components/header/header.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { JobsUpdateComponent } from './components/jobs/jobs-update/jobs-update.component';
+
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'jobs', component: JobsComponent},
-  {path: 'jobs/create', component: JobsCreateComponent}
+  {path: 'jobs/create', component: JobsCreateComponent},
+  {path: 'jobs/update/:id', component: JobsUpdateComponent},
  //{path: '', component: MyFirstComponentComponent},
  // {path: 'my-second-component', component: MySecondComponentComponent},
  // {path: 'my-third-component', component: MyThirdComponentComponent},

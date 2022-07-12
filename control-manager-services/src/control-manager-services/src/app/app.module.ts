@@ -33,6 +33,8 @@ import { MatTableModule } from '@angular/material/table'
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
 import { JobsUpdateComponent } from './components/jobs/jobs-update/jobs-update.component';
+import { JobsDeleteComponent } from './components/jobs/jobs-delete/jobs-delete.component';
+import { Header2Component } from './components/header2/header2.component';
 
 
 registerLocaleData(localePt);
@@ -56,6 +58,8 @@ registerLocaleData(localePt);
     JobsCreateComponent,
     JobsReadComponent,
     JobsUpdateComponent,
+    JobsDeleteComponent,
+    Header2Component,
   ],
   imports: [
     BrowserModule,

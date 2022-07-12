@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { JobsUpdateComponent } from './components/jobs/jobs-update/jobs-update.component';
+import { JobsDeleteComponent } from './components/jobs/jobs-delete/jobs-delete.component';
 
 
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'jobs', component: JobsComponent},
   {path: 'jobs/create', component: JobsCreateComponent},
   {path: 'jobs/update/:id', component: JobsUpdateComponent},
+  {path: 'jobs/delete/:id', component: JobsDeleteComponent},
  //{path: '', component: MyFirstComponentComponent},
  // {path: 'my-second-component', component: MySecondComponentComponent},
  // {path: 'my-third-component', component: MyThirdComponentComponent},

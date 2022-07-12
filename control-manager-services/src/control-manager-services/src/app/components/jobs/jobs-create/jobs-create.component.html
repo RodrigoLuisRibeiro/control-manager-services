@@ -2,13 +2,13 @@
   <mat-card-title>Novo Serviço</mat-card-title>
   <form>
       <mat-form-field>                   <!-- Two way data binding -->
-        <input matInput placeholder="Nome" [(ngModel)]="job.name" name="name">
+        <input matInput placeholder="Nome" [(ngModel)]="job.name" name="name" required>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Tipo" [(ngModel)]="job.tipo" name="tipo">
+        <input matInput placeholder="Tipo" [(ngModel)]="job.tipo" name="tipo" required>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Preço" [(ngModel)]="job.preco" name="preco">
+        <input matInput placeholder="Preço" [(ngModel)]="job.preco" name="preco" required>
       </mat-form-field>
   </form>
   <button mat-raised-button (click)="createJobs()" color="primary">

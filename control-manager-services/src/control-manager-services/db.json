@@ -1,51 +1,15 @@
 {
   "servicos": [
     {
-      "id": 1,
-      "name": "Work",
-      "tipo": "Comercial",
-      "preco": 99
-    },
-    {
-      "id": 2,
-      "name": "Hard",
-      "tipo": "Comercial",
-      "preco": 99
-    },
-    {
-      "name": "Premissa",
-      "tipo": "Hora extra 0",
-      "id": 3,
-      "preco": 99
-    },
-    {
-      "name": "Rede",
-      "tipo": "Emergência",
-      "id": 8,
-      "preco": 99
-    },
-    {
       "name": "Rodrigo",
       "tipo": "Emergência Final de semana",
       "id": 9,
       "preco": 99
     },
     {
-      "name": "Thiago",
-      "tipo": "Comercial",
-      "id": 10,
-      "preco": 99
-    },
-    {
       "name": "Lilian",
       "tipo": "Extras",
       "id": 11,
-      "preco": 99
-    },
-    {
-      "name": "TomTim",
-      "tipo": "DimterimBebim",
-      "id": 12,
       "preco": 99
     },
     {
@@ -59,6 +23,12 @@
       "tipo": "Emergencial",
       "preco": "550",
       "id": 14
+    },
+    {
+      "name": "Teste1099",
+      "tipo": "1099",
+      "preco": "570",
+      "id": 15
     }
   ]
 }

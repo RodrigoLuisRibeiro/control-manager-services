@@ -35,7 +35,12 @@ import { registerLocaleData } from  '@angular/common';
 import { JobsUpdateComponent } from './components/jobs/jobs-update/jobs-update.component';
 import { JobsDeleteComponent } from './components/jobs/jobs-delete/jobs-delete.component';
 import { Header2Component } from './components/header2/header2.component';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { LocalDateTimePipe } from './components/pipe/local-date-time.pipe';
+import {MatDialogModule} from '@angular/material/dialog';
+import { TextDialogComponent } from './components/text-dialog/text-dialog.component';
+import {MatIconModule} from '@angular/material/icon';
+import { MatNativeDateModule } from '@angular/material/core';
 
 registerLocaleData(localePt);
 
@@ -60,6 +65,8 @@ registerLocaleData(localePt);
     JobsUpdateComponent,
     JobsDeleteComponent,
     Header2Component,
+    LocalDateTimePipe,
+    TextDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,11 +82,16 @@ registerLocaleData(localePt);
     MatSnackBarModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatIconModule,
+    MatNativeDateModule
+    
   ],
   providers: [{
     provide: LOCALE_ID,
-    useValue: 'pt-BR'
+    useValue: 'pt-BR',
   }],
   bootstrap: [AppComponent]
   

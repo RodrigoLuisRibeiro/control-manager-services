@@ -1,3 +1,4 @@
+import { TextDialogComponent } from './components/text-dialog/text-dialog.component';
 import { JobsCreateComponent } from './components/jobs/jobs-create/jobs-create.component';
 import { JobsComponent } from './views/jobs/jobs.component';
 import { HomeComponent } from './views/home/home.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'jobs/create', component: JobsCreateComponent},
   {path: 'jobs/update/:id', component: JobsUpdateComponent},
   {path: 'jobs/delete/:id', component: JobsDeleteComponent},
+  {path: 'jobs/text/:id', component: TextDialogComponent},
  //{path: '', component: MyFirstComponentComponent},
  // {path: 'my-second-component', component: MySecondComponentComponent},
  // {path: 'my-third-component', component: MyThirdComponentComponent},

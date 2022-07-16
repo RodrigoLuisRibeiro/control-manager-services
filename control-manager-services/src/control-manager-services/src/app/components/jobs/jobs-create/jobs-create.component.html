@@ -11,30 +11,22 @@
         <input matInput placeholder="Preço" [(ngModel)]="job.preco" name="preco" required>
       </mat-form-field>
 
-      <mat-form-field >
-        <mat-label>Observações:</mat-label>
-        <textarea matInput [(ngModel)]="job.observacao" name="observacao"></textarea>
-      </mat-form-field>
-
-      <div fxLayout="row wrap">
-              <div fxFlex="40" fxFill fxLayoutAlign="start center">
-                <mat-form-field>
+                <mat-form-field appearance="fill">
                     <mat-label>Data do Serviço</mat-label>
                     <input matInput [matDatepicker]="picker" formControlName="date">
-                    <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
-                </mat-form-field>
-              </div>        
-        <div fxFlex></div> 
-          <div fxFlex="40" fxFill fxLayoutAlign="start center">
-              <mat-form-field>
+                </mat-form-field>           
+
+                <mat-form-field >
+                  <mat-label>Observações:</mat-label>
+                  <textarea matInput [(ngModel)]="job.observacao" name="observacao"></textarea>
+                </mat-form-field>  
+
+                <mat-form-field appearance="fill">
                   <mat-label>Horário do Serviço</mat-label>
                   <input matInput type="time" placeholder="" formControlName="time" #time/>
-              </mat-form-field>
-          </div>
-      </div> 
-
-       
+                </mat-form-field>     
   </form>
   <button mat-raised-button (click)="createJobs()" color="primary">
     Salvar

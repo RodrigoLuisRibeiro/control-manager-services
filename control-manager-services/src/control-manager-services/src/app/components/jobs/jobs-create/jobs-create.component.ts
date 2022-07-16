@@ -1,4 +1,5 @@
-import { Validators, FormGroup } from '@angular/forms';
+import { MatDialogRef } from '@angular/material/dialog';
+import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { JobsService } from './../jobs.service';
 import { Component, OnInit } from '@angular/core';
@@ -12,37 +13,34 @@ import * as moment from 'moment';
 })
 export class JobsCreateComponent implements OnInit {
 
-   private dateForm!: FormGroup;
-
   job: Job = {
-    name: '', 
+    name: '',
     tipo: '',
-    preco: 0, 
-    date: '',
-    time: '',
+    preco: 0,
     observacao: '',
-
+    date: '',
+    time: ''
   }
 
-  constructor(private jobService: JobsService, 
-  private router: Router) { }
+  constructor(
+    private jobService: JobsService, 
+    private router: Router,) { }
 
   ngOnInit(): void {
-    
+   
   }
 
   createJobs(): void {
     let newDate: moment.Moment = moment.utc(this.job.date).local();
     this.job.date = newDate.format("YYYY-MM-DD") + "T" + this.job.time;
     this.jobService.create(this.job).subscribe(() => {
-        this.jobService.showMessage('Serviço adicionado com sucesso!')
-        this.router.navigate(['/jobs'])
+    this.jobService.showMessage('Serviço adicionado com sucesso!')
+    this.router.navigate(['/jobs'])
     })   
   }
 
   cancelJobs(): void {
     this.router.navigate(['/jobs']) 
-    this.dateForm.reset();
   }
 
 }

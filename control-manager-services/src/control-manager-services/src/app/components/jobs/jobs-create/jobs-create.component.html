@@ -1,39 +1,39 @@
 <mat-card>
   <mat-card-title>Novo Serviço</mat-card-title>
-  <form>
-      <mat-form-field>                   <!-- Two way data binding -->
-        <input matInput placeholder="Nome" [(ngModel)]="job.name" name="name" required>
+    <form class="job-field" [formGroup]="jobForm">
+      <mat-form-field>                   
+        <input matInput placeholder="Nome" formControlName="name" name="name" required>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Tipo" [(ngModel)]="job.tipo" name="tipo" required>
+        <input matInput placeholder="Tipo" formControlName="tipo" name="tipo" required>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Preço" [(ngModel)]="job.preco" name="preco" required>
+        <input matInput placeholder="Preço" formControlName="preco" name="preco" required>
       </mat-form-field>
 
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="outline">
                     <mat-label>Data do Serviço</mat-label>
                     <input matInput [matDatepicker]="picker" formControlName="date">
                     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
-                </mat-form-field>           
+                </mat-form-field>          
 
-                <mat-form-field >
+                <mat-form-field appearance="outline">
                   <mat-label>Observações:</mat-label>
-                  <textarea matInput [(ngModel)]="job.observacao" name="observacao"></textarea>
+                  <textarea matInput formControlName="observacao" name="observacao"></textarea>
                 </mat-form-field>  
 
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="outline">
                   <mat-label>Horário do Serviço</mat-label>
                   <input matInput type="time" placeholder="" formControlName="time" #time/>
                 </mat-form-field>     
-  </form>
-  <button mat-raised-button (click)="createJobs()" color="primary">
-    Salvar
-</button>
-<button mat-raised-button (click)="cancelJobs()">
-    Cancelar
-</button>
+    </form>
+      <button mat-raised-button (click)="createJobs()" color="primary">
+        Salvar
+      </button>
+      <button mat-raised-button (click)="cancelJobs()">
+          Cancelar
+      </button>
 </mat-card>
 
 

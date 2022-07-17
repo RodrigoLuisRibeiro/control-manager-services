@@ -13,33 +13,40 @@ import * as moment from 'moment';
 })
 export class JobsCreateComponent implements OnInit {
 
-  job: Job = {
-    name: '',
-    tipo: '',
-    preco: 0,
-    observacao: '',
-    date: '',
-    time: ''
-  }
+  public jobForm!: FormGroup;
 
   constructor(
+    
+    private formBuilder: FormBuilder,
     private jobService: JobsService, 
     private router: Router,) { }
 
   ngOnInit(): void {
-   
+    this.jobForm = this.formBuilder.group({
+        name: ['', [Validators.required]],
+        tipo: ['', [Validators.required]],
+        preco: ['', [Validators.required]],
+        observacao: ['', [Validators.required]],
+        date: ['', [Validators.required]],
+        time: ['', [Validators.required]]
+    })
   }
 
   createJobs(): void {
-    let newDate: moment.Moment = moment.utc(this.job.date).local();
-    this.job.date = newDate.format("YYYY-MM-DD") + "T" + this.job.time;
-    this.jobService.create(this.job).subscribe(() => {
+    let newDate: moment.Moment = moment.utc(this.jobForm.value.date).local();
+    this.jobForm.value.date = newDate.format("DD-MM-YYYY") + " h " + this.jobForm.value.time;
+    console.log(this.jobForm.value);
+    this.jobService.create(this.jobForm.value).subscribe(() => {
     this.jobService.showMessage('Serviço adicionado com sucesso!')
     this.router.navigate(['/jobs'])
-    })   
+    });
+    
+       this.jobForm.reset();
   }
 
   cancelJobs(): void {
+    
+    this.jobForm.reset();
     this.router.navigate(['/jobs']) 
   }
 

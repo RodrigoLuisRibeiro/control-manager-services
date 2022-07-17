@@ -80,6 +80,24 @@
       "date": "Invalid dateT",
       "time": "",
       "id": 9
+    },
+    {
+      "name": "enw test",
+      "tipo": "new test",
+      "preco": "741",
+      "observacao": "how how",
+      "date": "17-07-2022 T 18:37",
+      "time": "18:37",
+      "id": 12
+    },
+    {
+      "name": "old test",
+      "tipo": "old test",
+      "preco": "777",
+      "observacao": "new",
+      "date": "17-07-2022 h 18:39",
+      "time": "18:39",
+      "id": 13
     }
   ]
 }

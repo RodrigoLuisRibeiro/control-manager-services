@@ -1,7 +1,9 @@
 IMG.image {
     display: block;
-    margin-left: auto;
-    margin-right: auto ;
+    width: 110px;
+    margin-left: 450px;
+    
     padding-top: 2%;
     padding-bottom: 2%
+    
     }

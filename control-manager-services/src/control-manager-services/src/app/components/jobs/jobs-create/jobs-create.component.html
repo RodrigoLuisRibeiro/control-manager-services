@@ -5,28 +5,32 @@
         <input matInput placeholder="Nome" formControlName="name" name="name" required>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Tipo" formControlName="tipo" name="tipo" required>
+        <input matInput placeholder="Tipo do Serviço" formControlName="tipo" name="tipo" required>
       </mat-form-field>
       <mat-form-field>
         <input matInput placeholder="Preço" formControlName="preco" name="preco" required>
       </mat-form-field>
-
+              <div>
                 <mat-form-field appearance="outline">
                     <mat-label>Data do Serviço</mat-label>
                     <input matInput [matDatepicker]="picker" formControlName="date">
                     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
-                </mat-form-field>          
-
-                <mat-form-field appearance="outline">
-                  <mat-label>Observações:</mat-label>
-                  <textarea matInput formControlName="observacao" name="observacao"></textarea>
-                </mat-form-field>  
-
+                </mat-form-field>   
+                
+                <div class="time">
                 <mat-form-field appearance="outline">
                   <mat-label>Horário do Serviço</mat-label>
-                  <input matInput type="time" placeholder="" formControlName="time" #time/>
-                </mat-form-field>     
+                  <input matInput type="time" formControlName="time" #time/>
+                </mat-form-field>  
+                </div>
+
+              </div>
+
+              <mat-form-field appearance="outline">
+                  <mat-label>Observações:</mat-label>
+                  <textarea matInput formControlName="observacao" name="observacao"></textarea>
+                </mat-form-field> 
     </form>
       <button mat-raised-button (click)="createJobs()" color="primary">
         Salvar

@@ -41,6 +41,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { TextDialogComponent } from './components/text-dialog/text-dialog.component';
 import {MatIconModule} from '@angular/material/icon';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 registerLocaleData(localePt);
 
@@ -86,8 +87,8 @@ registerLocaleData(localePt);
     MatDatepickerModule,
     MatDialogModule,
     MatIconModule,
-    MatNativeDateModule
-    
+    MatNativeDateModule,
+    MatPaginatorModule
   ],
   providers: [{
     provide: LOCALE_ID,

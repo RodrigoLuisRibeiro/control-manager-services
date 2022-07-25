@@ -5,14 +5,13 @@
         <input matInput placeholder="Nome" [(ngModel)]="job.name" name="name">
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Tipo" [(ngModel)]="job.tipo" name="tipo">
+        <input matInput placeholder="Tipo do Serviço" [(ngModel)]="job.tipo" name="tipo">
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Preço" [(ngModel)]="job.preco" name="preco">
+        <input matInput placeholder="Preço (R$)" [(ngModel)]="job.preco" name="preco">
       </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>Observações:</mat-label>
-        <textarea matInput></textarea>
+      <mat-form-field >
+        <input matInput placeholder="Observação" [(ngModel)]="job.observacao" name="observacao">
       </mat-form-field>
   </form> 
   <button mat-raised-button (click)="updateJobs()" color="primary">

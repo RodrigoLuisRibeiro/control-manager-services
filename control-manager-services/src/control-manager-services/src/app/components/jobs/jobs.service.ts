@@ -1,8 +1,9 @@
 import { catchError, EMPTY, map, Observable } from 'rxjs';
 import { Job } from './jobs-create/jobs.model';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,10 @@ export class JobsService {
   baseUrl = "http://localhost:3000/servicos"
 
   constructor(private snackBar: MatSnackBar, private http:HttpClient) { }
+
+  getData() {
+    return this.http.get(this.baseUrl);
+  }
 
   showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'X', {

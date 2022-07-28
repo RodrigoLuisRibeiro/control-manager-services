@@ -4,13 +4,17 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "",
+    "build": "ng build --prod --base-href=/control-manager-services/",
     "ghpages": "angular-cli-ghpages --dir=dist/control-manager-services",
     "deploy:ghdocs": "ng build --output-path docs --base-href=/control-manager-services/",
     "watch": "ng build --watch --configuration development",
     "json:server": "json-server --watch db.json",
     "json:server:routes": "json-server --watch db.json --routes routes.json",
     "test": "ng test"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.7.0"
   },
   "private": true,
   "dependencies": {
